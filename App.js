@@ -32,4 +32,4 @@ app.get('/badge', validate(querySchema, {}, {}), (req, res) => {
     res.setHeader('Content-Type', 'image/svg+xml')
     res.send(svg)
   })
-  
+app.listen(port, () => console.log('App started at port:', port))
