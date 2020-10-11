@@ -22,7 +22,13 @@ const querySchema = {
       style: Joi.string().valid('plastic', 'flat', 'flat-square', 'for-the-badge', 'social')
     }).unknown(true)
   }
-  
+  const stripProperties = (original, allowedProperties) =>
+  Object.entries(original).reduce((obj, [property, value]) => {
+    if (allowedProperties.includes(property)) {
+      obj[property] = value
+    }
+    return obj
+  }, {})
 app.get('/', (req, res) => {
     res.redirect('https://github.com/alestor123')
 })
