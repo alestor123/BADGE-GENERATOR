@@ -1,3 +1,4 @@
+require('dotenv').config()
 var express = require('express'),
     app = express(),
     { validate, ValidationError: RequestValidationError, Joi } = require('express-validation'),
