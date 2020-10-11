@@ -17,4 +17,11 @@ const querySchema = {
   
 app.get('/', (req, res) => {
     res.redirect('https://github.com/alestor123')
+})
+app.get('/badge', validate(querySchema, {}, {}), (req, res) => {
+    const badgeData = stripProperties(req.query, [...querySchema.query._ids._byKey.keys()])
+    const svg = makeBadge(badgeData)
+    res.setHeader('Content-Type', 'image/svg+xml')
+    res.send(svg)
   })
+  
