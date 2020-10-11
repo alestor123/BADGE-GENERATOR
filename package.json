@@ -1,0 +1,19 @@
+{
+  "name": "badge-generator",
+  "version": "1.0.0",
+  "description": "This is simple code for badge generator ",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/alestor123/badge-generator.git"
+  },
+  "author": "Alestor Aldous",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/alestor123/badge-generator/issues"
+  },
+  "homepage": "https://gitlab.com/alestor123/badge-generator#readme"
+}
