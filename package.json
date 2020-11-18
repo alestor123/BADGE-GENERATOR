@@ -1,5 +1,5 @@
 {
-  "name": "badge-generator",
+  "name": "git-badge-generator",
   "version": "1.0.0",
   "description": "This is simple code for badge generator ",
   "main": "App.js",
