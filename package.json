@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This is simple code for badge generator ",
   "main": "App.js",
+  "bin": {
+    "git-badge-generator": "App.js"
+  },
   "scripts": {
     "start":"node App.js",
     "dev":"nodemon App.js",
