@@ -3,7 +3,21 @@ var express = require('express'),
     app = express(),
     { validate, ValidationError: RequestValidationError, Joi } = require('express-validation'),
     { makeBadge } = require('badge-maker'),
-port = process.env.PORT || 3000;
+  argv = process.argv[2],
+pck = require('./package.json'),  
+port = process.env.PORT || argv || 3000;
+if(argv== '-v' ||argv == '--version'){
+    console.log( `${pck.version}`)
+  process.exit(1);
+}
+else if (argv =='-h'|| argv == '--help') { // checking undifined args
+    console.log(`
+    Usage: badge-generator <Port> 
+`);
+}
+else{
+    app.listen(port, () => console.log(`server running at ${port}`))
+}
 app.use(function(err, req, res, next) {
     console.error(err)
     if (err instanceof RequestValidationError) {
@@ -38,4 +52,3 @@ app.get('/badge', validate(querySchema, {}, {}), (req, res) => {
     res.setHeader('Content-Type', 'image/svg+xml')
     res.send(svg)
   })
-app.listen(port, () => console.log('App started at port:', port))
