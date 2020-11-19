@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/github/license/alestor123/BADGE-GENERATOR" alt=views >
 <a href="https://github.com/alestor123/BADGE-GENERATOR/issues">
 <img src="https://img.shields.io/github/issues-raw/alestor123/BADGE-GENERATOR"></a>
-<a href="https://www.npmjs.com/package/version-badge"><img src="https://version-badge.glitch.me/alestor123/BADGE-GENERATOR/green"></a>
+<a href="https://www.npmjs.com/package/git-badge-generator"><img src="https://version-badge.glitch.me/alestor123/BADGE-GENERATOR/green"></a>
 </p>
 
 #
@@ -37,7 +37,7 @@
 ``git-badge-generator <port number> ``
 
 
-`https://version-badge.glitch.me/badge?<params>`
+`https://badge-generator.glitch.me/badge?<params>`
 
 ### Params
 name | value | required
