@@ -1,15 +1,14 @@
-<a href="https://version-badge.glitch.me/">
+<a href="https://badge-generator.glitch.me/">
 <h1 align=center>Badge Generator
-<img src="https://version-badge.glitch.me/alestor123/VERSION-BADGE/text">
+<img src="https://version-badge.glitch.me/alestor123/BADGE-GENERATOR/text">
 </h1>
 </a>
-
 </a>
 <p align=center>
-<img src="https://img.shields.io/github/license/alestor123/VERSION-BADGE" alt=views >
-<a href="https://github.com/alestor123/VERSION-BADGE/issues">
-<img src="https://img.shields.io/github/issues-raw/alestor123/VERSION-BADGE"></a>
-<a href="https://www.npmjs.com/package/version-badge"><img src="https://version-badge.glitch.me/alestor123/VERSION-BADGE/green"></a>
+<img src="https://img.shields.io/github/license/alestor123/BADGE-GENERATOR" alt=views >
+<a href="https://github.com/alestor123/BADGE-GENERATOR/issues">
+<img src="https://img.shields.io/github/issues-raw/alestor123/BADGE-GENERATOR"></a>
+<a href="https://www.npmjs.com/package/version-badge"><img src="https://version-badge.glitch.me/alestor123/BADGE-GENERATOR/green"></a>
 </p>
 
 #
