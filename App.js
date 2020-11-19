@@ -47,6 +47,10 @@ const querySchema = {
 app.get('/github', (req, res) => {
     res.redirect('https://github.com/alestor123/BADGE-GENERATOR')
 })
+
+app.get('/', (req, res) => {
+    res.json({info:"Badge Generator"})
+})
 app.get('/badge', validate(querySchema, {}, {}), (req, res) => {
     const badgeData = stripProperties(req.query, [...querySchema.query._ids._byKey.keys()])
     const svg = makeBadge(badgeData)
