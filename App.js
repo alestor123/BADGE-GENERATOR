@@ -44,8 +44,8 @@ const querySchema = {
     }
     return obj
   }, {})
-app.get('/', (req, res) => {
-    res.redirect('https://github.com/alestor123')
+app.get('/github', (req, res) => {
+    res.redirect('https://github.com/alestor123/BADGE-GENERATOR')
 })
 app.get('/badge', validate(querySchema, {}, {}), (req, res) => {
     const badgeData = stripProperties(req.query, [...querySchema.query._ids._byKey.keys()])
